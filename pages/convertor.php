@@ -44,18 +44,18 @@
                                 <label class="form-label" for="amount">Введите сумму:</label>
                                 <input type="text" class="form-control" id="amount" name="amount" placeholder="Например: 120.23" value="<?= $_GET['amount'] ?? '' ?>">
                             </div>
-                            
+
                             <?php if ($result) { ?>
-                            <div class="alert alert-primary text-center mt-3 mb-1" role="alert">
-                                <b><?= $result['amount'] ?></b> <?= $result['from'] ?> = <br>
-                                <b><?= $result['result'] ?></b> <?= $result['to'] ?>
-                            </div>
+                                <div class="alert alert-primary text-center mt-3 mb-1" role="alert">
+                                    <b><?= $result['amount'] ?> </b> <?= $result['from'] ?> = <br>
+                                    <b><?= $result['result'] ?> </b> <?= $result['to'] ?>
+                                </div>
                             <?php } ?>
-                            
+
                             <?php if ($error) { ?>
-                            <div class="alert alert-danger text-center mt-3 mb-1" role="alert">
-                                <?= $error ?>
-                            </div>                            
+                                <div class="alert alert-danger text-center mt-3 mb-1" role="alert">
+                                    <?= $error ?>
+                                </div>
                             <?php } ?>
 
                             <div class="mt-3 text-center">
