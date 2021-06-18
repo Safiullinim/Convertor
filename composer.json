@@ -1,0 +1,16 @@
+{
+    "name": "user/convertor",
+    "authors": [
+        {
+            "name": "Safiullin",
+            "email": "safiullin@local.dev"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "": ""
+        }
+    },
+    "description": "Currency convertor",
+    "require": {}
+}
